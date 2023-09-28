@@ -2,7 +2,12 @@
 
 <% @blog_posts.each do |blog_post| %>
   <div>
-    <h2><%= link_to blog_post.title, blog_post %></h2>
+    <div class="flex inline">
+      <% if blog_post.draft? %>
+        <div class="p-2 m-2 rounded bg-gray-100 text-gray-900">Draft</div>
+      <% end %>
+      <h2 class="p-2 m-0"><%= link_to blog_post.title, blog_post %></h2>
+    </div>
     <%= blog_post.body %>
   </div>
 <% end %>
