@@ -24,4 +24,16 @@ class BlogPostTest < ActiveSupport::TestCase
   test "published? returns false for scheduled blog post" do
     refute BlogPost.new(published_at: 1.day.from_now).published?
   end
+
+  test "scheduled? returns true for scheduled blog post" do
+    assert BlogPost.new(published_at: 1.day.from_now).scheduled?
+  end
+
+  test "scheduled? returns false for draft blog post" do
+    refute BlogPost.new(published_at: nil).scheduled?
+  end
+
+  test "scheduled? returns false for published blog post" do
+    refute BlogPost.new(published_at: 1.day.ago).scheduled?
+  end
 end
