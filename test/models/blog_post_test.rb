@@ -8,4 +8,8 @@ class BlogPostTest < ActiveSupport::TestCase
   test "draft? returns false for published blog post" do
     refute BlogPost.new(published_at: 1.day.ago).draft?
   end
+
+  test "draft? returns false for scheduled blog post" do
+    refute BlogPost.new(published_at: 1.day.from_now).draft?
+  end
 end
