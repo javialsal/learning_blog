@@ -9,7 +9,7 @@
 <ul>
   <li>Log in and sign out.</li>
   <li>Change your password.</li>
-  <li>Create a new post as "published" or as a "draft".</li>
+  <li>Create a new post as "published" or as "draft".</li>
   <li>Add style and multimedia files to the posts content.</li>
   <li>Edit an existing post.</li>
   <li>Schedule a draft post to be posted at a specific day and time.</li>
