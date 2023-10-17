@@ -12,6 +12,7 @@
   <li>Create a new post as "published" or as "draft".</li>
   <li>Add style and multimedia files to the posts content.</li>
   <li>Edit an existing post.</li>
+  <li>Delete a post.</li>
   <li>Schedule a draft post to be posted at a specific day and time.</li>
   <li>Change the posts publication date before they are published.</li>
 </ul>
