@@ -17,12 +17,13 @@
   <li>Change the posts publication date before they are published.</li>
 </ul>
 
-# Built with
+# BUILT WITH
 
 <ul>
   <li>Ruby on Rails</li>
   <li>TailwindCSS</li>
   <li>ActionText</li>
   <li>ActiveStorage & Amazon S3</li>
+  <li>Pagi</li>
   <li>Scalingo</li>
 </ul>
